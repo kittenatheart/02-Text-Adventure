@@ -1,2 +1,2 @@
-# 02-Text-Adventure
+# 02-Text-adventure
 C220 Project 02
