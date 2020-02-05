@@ -1,0 +1,143 @@
+{
+	"START": {
+		"name": "Start",
+		"desc": "Your mom has just dropped you off at a day camp. You are a bit late today, so all the other campers have already begun participating in some fun activities.\nDo you want to START your day and join them?",
+		"exits": [
+			{
+				"exit": "START",
+				"target": "TRAIL"
+			}
+		]
+	}, 
+	"TRAIL": {
+		"name": "Dirt Trail",
+		"desc": "You are standing at the edge of the gravel trail where your mom dropped you off. In front of you is a packed dirt trail: to the RIGHT is the cabin where all the campers usually meet in the mornings and at the end of the day, and to the LEFT is the lake where most of the outside activities take place.",
+		"exits": [
+			{
+				"exit": "LEFT",
+				"target": "LAKE"
+			},
+			{
+				"exit": "RIGHT",
+				"target": "CABIN"
+			}
+		]
+	},
+	"LAKE": {
+		"name": "Lake",
+		"desc": "You stand at the mouth of the trail overlooking the lake. It's beautiful outside today, and there are plenty of activities going on already.\n You can stay on the SHORE and play with clay from the bottom of the lake, head to the PIER and learn how to fish, or run directly into the WATER for a swim.",
+		"exits": [
+			{
+				"exit": "TRAIL",
+				"target": "TRAIL"
+			},{
+				"exit": "SHORE",
+				"target": "CLAY"
+			},{
+				"exit": "PIER",
+				"target": "FISHING"
+			},{
+				"exit": "WATER",
+				"target": "SWIMMING"
+			}
+		]
+	},
+	"CLAY": {
+		"name": "Water's Edge",
+		"desc": "You go to the edge of the water and one of the other campers gives you a softball-sized ball of clay from the bottom of the lake. He seems very proud of it.\nThe clay is very slippery and hard to shape, but you have fun trying.\nIf you're DONE, you can always go back to shore and see what else there is to do.",
+		"exits": [
+			{
+				"exit": "TRAIL",
+				"target": "TRAIL"
+			},{
+				"exit": "DONE",
+				"target": "LAKE"
+			},{
+				"exit": "PIER",
+				"target": "FISHING"
+			},{
+				"exit": "WATER",
+				"target": "SWIMMING"
+			}
+		]
+	},
+	"FISHING": {
+		"name": "Pier",
+		"desc": "You go to the pier, where a counselor gives you a fishing pole and shows you how to cast a line. After a while of waiting with no success, you get bored.\nIf you're DONE, you can always go back to shore and see what else there is to do.",
+		"exits": [
+			{
+				"exit": "TRAIL",
+				"target": "TRAIL"
+			},{
+				"exit": "SHORE",
+				"target": "CLAY"
+			},{
+				"exit": "DONE",
+				"target": "LAKE"
+			},{
+				"exit": "WATER",
+				"target": "SWIMMING"
+			}
+		]
+	},
+	"SWIMMING": {
+		"name": "Water",
+		"desc": "You leap into the water and drown.",
+		"exits": []
+	},
+	"CABIN": {
+		"name": "Cabin",
+		"desc": "You walk to the right and enter the cozy log cabin through the FRONT DOOR. Inside, there is a station at the TABLE where a counselor is showing other campers how to make bread, and through the BACK DOOR you can see some other campers feeding the goats in a fence behind the cabin.",
+		"exits": [
+			{
+				"exit": "TABLE",
+				"target": "BREAD"
+			},{
+				"exit": "BACK DOOR",
+				"target": "GOATS"
+			},{
+				"exit": "FRONT DOOR",
+				"target": "TRAIL"
+			}
+		]
+	},
+	"BREAD": {
+		"name": "Bread-Making Station",
+		"desc": "You join the children at the counter and help them knead some dough.\nNow that you've kneaded the dough, you have to wait for it to rise. In the meantime, you can go visit the goats through the BACK DOOR or go to the lake through the FRONT DOOR.",
+		"exits": [
+			{
+				"exit": "BACK DOOR",
+				"target": "GOATS"
+			},{
+				"exit": "FRONT DOOR",
+				"target": "TRAIL"
+			}
+		]
+	},
+	"GOATS": {
+		"name": "Goat Pen",
+		"desc": "You pet some of the goats through the mesh of the fence. They seem content, but mildy disinterested in you. Maybe they would pay attention if you FEED them some grass?\nOr you can go back inside via the BACK DOOR.",
+		"exits": [
+			{
+				"exit": "DOOR",
+				"target": "CABIN"
+			},{
+				"exit": "FEED",
+				"target": "FEED"
+			}
+		]
+	},
+	"FEED": {
+		"name": "Goats",
+		"desc": "The goats eat grass from your hand. They seem very happy :)",
+		"exits": [
+			{
+				"exit": "DOOR",
+				"target": "CABIN"
+			},{
+				"exit": "FEED",
+				"target": "FEED"
+			}
+		]
+	}
+}
